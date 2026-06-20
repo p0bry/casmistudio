@@ -1,4 +1,4 @@
-# FrameCut Studio — Landing Page
+# Casmi Studio — Landing Page
 
 A premium, conversion-focused landing page for a professional video editing studio. Built with Next.js 14 (App Router), Supabase, and a custom PT/EN i18n system.
 
