@@ -1,0 +1,38 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.option {
+  background: none;
+  border: none;
+  color: rgba(244, 240, 255, 0.45);
+  cursor: pointer;
+  padding: 0.15rem 0.25rem;
+  border-radius: 9999px;
+  transition: color 200ms ease;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.option:hover {
+  color: rgba(244, 240, 255, 0.85);
+}
+
+.option.active {
+  color: #fff;
+}
+
+.divider {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+}

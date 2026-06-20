@@ -1,0 +1,93 @@
+.section {
+  background: #09061a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 350ms ease;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(112, 0, 255, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+}
+
+.text {
+  font-size: 0.9375rem;
+  color: rgba(244, 240, 255, 0.75);
+  line-height: 1.75;
+  flex: 1;
+  font-style: normal;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.name {
+  display: block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #f4f0ff;
+  font-style: normal;
+}
+
+.role {
+  font-size: 0.8rem;
+  color: rgba(244, 240, 255, 0.45);
+  margin-top: 0.1rem;
+}
+
+.company {
+  color: rgba(167, 139, 250, 0.8);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
